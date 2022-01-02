@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'),
+        url('Lato-Medium.woff2') format('woff2'),
+        url('Lato-Medium.woff') format('woff'),
+        url('Lato-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+ }
+
+body {
+    margin: 0;
+    font-family: 'Lato';
+    font: 18px sans-serif;
+    color: black;
+}
+/* INFO SECTION */
+
+.info {
+    background: url('cat-image.jpg') center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 450px;
+    z-index: 1;
+    position: relative;
+}
+
+.info:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+    text-align: center;
+}
+
+.info-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+
+.info-title {
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 40px
+}
+
+.info-subtitle {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+/* SECTION ONE */
+
+.section-promo {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0;
+    display: flex;
+    background: white
+}
+
+.title {
+    font-size: 32px;
+    line-height: 51px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.content-promo {
+    padding-right: 30px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #6c6c6c;
+    margin-top: 14px;
+}
+
+.content-promo, .photo {
+    flex-basis: 50%;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, .4);
+}
+
+/* SECTION TWO */
+
+.section-promo2 {
+    display: flex;
+    padding: 150px;
+    margin-top: 86px;
+    margin: 0;
+    background: #F5F5F5;
+}
+
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+.section-promo2-item {
+    text-align: center;
+}
+
+
+.section-promo2-item + .section-promo2-item {
+    margin-left: 40px;
+}
+
+/* GIFTS-SECTION */
+
+.gifts-section {
+    padding: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin: 0;
+    background: white;
+}
+
+.gifts-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.gifts-subtitle {
+    text-transform: uppercase;
+}
+
+.gifts-text {
+    text-align: center;
+    padding-bottom: 90px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.gifts-section-item {
+
+    background: #F5F5F5;
+    text-align: center;
+    flex-basis: 370px;
+    padding: 60px 45px;
+}
+
+gifts-section-item2 {
+
+}
+
+.gifts-flex-section {
+    display: flex;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.gifts-noflex-section {
+    display: block;
+}
+
+.gifts-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.price {
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.prefix {
+    font-size: 54px;
+    color: rgb(255, 73, 73);
+    font-weight: bold;
+}
+
+.postfix {
+    font-weight: 400;
+}
+
+.price-text {
+    margin-bottom: 22px;
+}
+
+.gifts-section-item + .gifts-section-item2 {
+    margin-left: 15px;
+}
+
+.button {
+    margin: 0;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(255, 73, 73), #fe985b);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer-background {
+    background: #181513;
+    margin: 0;
+}
+
+.footer-content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 90px;
+    color: white;
+    vertical-align: margin;
+    line-height: 32px;
+    display: flex;
+    font-size: 17px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-content-left + .footer-content-center {
+    margin-left: 40px;
+}
+
+.footer-content-center + .footer-content-right {
+    margin-left: 40px;
+}
